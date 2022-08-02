@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="yowit_vibe.list">
+      <field name="name">yowit_vibe list</field>
+      <field name="model">yowit_vibe.yowit_vibe</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="yowit_vibe.action_window">
+      <field name="name">yowit_vibe window</field>
+      <field name="res_model">yowit_vibe.yowit_vibe</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="yowit_vibe.action_server">
+      <field name="name">yowit_vibe server</field>
+      <field name="model_id" ref="model_yowit_vibe_yowit_vibe"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="yowit_vibe" id="yowit_vibe.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="yowit_vibe.menu_1" parent="yowit_vibe.menu_root"/>
+    <menuitem name="Menu 2" id="yowit_vibe.menu_2" parent="yowit_vibe.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="yowit_vibe.menu_1_list" parent="yowit_vibe.menu_1"
+              action="yowit_vibe.action_window"/>
+    <menuitem name="Server to list" id="yowit_vibe" parent="yowit_vibe.menu_2"
+              action="yowit_vibe.action_server"/>
+-->
+  </data>
+</odoo>

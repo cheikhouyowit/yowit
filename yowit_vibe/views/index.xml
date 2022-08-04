@@ -7,7 +7,7 @@
             <field name="view_mode">tree,form</field>
     </record>
 <menuitem name="Yowit" id="index_base_menu" />
-<menuitem name="Books" id="index_book_menu" />
+<menuitem name="Test" id="index_book_menu" parent="index_base_menu" />
 <record id="index_view_form" model="ir.ui.view">
     <field name="name">Index Form</field>
     <field name="model">index.index</field>
@@ -16,11 +16,42 @@
             <group>
                 <group>
                     <field name="name"/>
+                    <field name="description" />
                 </group>
             </group>
         </form>
     </field>
 </record>
+
+<record id="index_view_tree" model="ir.ui.view">
+  <field name="name">index List</field>
+  <field name="model">index.index</field>
+  <field name="arch" type="xml">
+    <tree>
+      <field name="name"/>
+      <field name="description"/>
+    </tree>
+  </field>
+</record>
+
+<record id="index_view_search" model="ir.ui.view">
+  <field name="name">Index Search</field>
+  <field name="model">index.index</field>
+  <field name="arch" type="xml">
+    <search>
+      <field name="name"/>
+      <field name="description"/>
+  </field>
+</record>
+
+
+<record id="index_vibe" model="index.index">
+    <field name="name"> Odoo 14 Yowit Sn </field>
+</record>
+<record id="base.main_company" model="res.company">
+    <field name="name">YOWIT SN</field>
+</record>
+
 
 
 </odoo>

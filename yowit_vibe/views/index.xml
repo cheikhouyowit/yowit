@@ -41,9 +41,9 @@
     <search>
       <field name="name"/>
       <field name="description"/>
+    </search>
   </field>
 </record>
-
 
 <record id="index_vibe" model="index.index">
     <field name="name"> Odoo 14 Yowit Sn </field>

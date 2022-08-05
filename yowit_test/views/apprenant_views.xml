@@ -26,6 +26,7 @@
       <field name="model">apprenant.yowit</field>
       <field name="arch" type="xml">
         <form>
+        <group>
           <field name="prenom"/>
           <field name="nom"/>
           <field name="adresse"/>
@@ -34,6 +35,7 @@
           <field name="telephone"/>
           <field name="date_naiss"/>
           <field name="date_debut"/>  
+        </group>
         </form>
       </field>
     </record>

@@ -10,5 +10,5 @@ class Apprenants(models.Model):
     email=fields.Char()
     telephone=fields.Char()
     date_naiss=fields.Date("Date de naissance")
-    date_debut=fields.DateTime("date debut")
+    date_debut=fields.Datetime("date debut")
 

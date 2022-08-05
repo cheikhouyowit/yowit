@@ -9,5 +9,5 @@ class Professeur(models.Model):
     sexe=fields.Selection([("masculin","Masculin"), ("feminin","Feminin")])
     email=fields.Char()
     telephone=fields.Char()
-    date_debut=fields.DateTime("date debut")
+    date_debut=fields.Datetime("date debut")
     

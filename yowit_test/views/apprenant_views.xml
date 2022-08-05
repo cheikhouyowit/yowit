@@ -26,16 +26,16 @@
       <field name="model">apprenant.yowit</field>
       <field name="arch" type="xml">
         <form>
-        <group>
-          <field name="prenom"/>
-          <field name="nom"/>
-          <field name="adresse"/>
-          <field name="sexe"/>
-          <field name="email"/>
-          <field name="telephone"/>
-          <field name="date_naiss"/>
-          <field name="date_debut"/>  
-        </group>
+            <group>
+              <field name="prenom"/>
+              <field name="nom"/>
+              <field name="adresse"/>
+              <field name="sexe"/>
+              <field name="email"/>
+              <field name="telephone"/>
+              <field name="date_naiss"/>
+              <field name="date_debut"/>  
+            </group>
         </form>
       </field>
     </record>
@@ -44,7 +44,7 @@
     <!-- actions opening views on models -->
 
     <record model="ir.actions.act_window" id="apprenant_action_window">
-      <field name="name">Apprenant window</field>
+      <field name="name">Domaine des apprenants</field>
       <field name="res_model">apprenant.yowit</field>
       <field name="view_mode">tree,form</field>
     </record>

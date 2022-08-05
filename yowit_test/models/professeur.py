@@ -1,13 +1,13 @@
-from odoo import models,field,api
+from odoo import models,fields,api
 
 
 class Professeur(models.Model):
     _name= "professeur.yowit"
-    prenom=field.Char("prenom")
-    nom=field.Char("nom")
-    adresse=field.Char("adresse")
-    sexe=field.Selection([("masculin","Masculin"), ("feminin","Feminin")])
-    email=field.Char()
-    telephone=field.Char()
-    date_debut=field.DateTime("date debut")
+    prenom=fields.Char("prenom")
+    nom=fields.Char("nom")
+    adresse=fields.Char("adresse")
+    sexe=fields.Selection([("masculin","Masculin"), ("feminin","Feminin")])
+    email=fields.Char()
+    telephone=fields.Char()
+    date_debut=fields.DateTime("date debut")
     

@@ -1,9 +1,9 @@
-from odoo import models,field,api
+from odoo import models,fields,api
 
 
 class Matiere(models.Model):
     _name= "matiere.yowit"
-    nom=field.Char("nom")
-    code=field.Char()
+    nom=fields.Char("nom")
+    code=fields.Char()
 
     

@@ -1,14 +1,14 @@
-from odoo import models,field,api
+from odoo import models,fields,api
 
 
 class Apprenants(models.Model):
     _name= "apprenant.yowit"
-    prenom=field.Char("prenom")
-    nom=field.Char("nom")
-    adresse=field.Char("adresse")
-    sexe=field.Selection([("masculin","Masculin"),("feminin","Feminin")])
-    email=field.Char()
-    telephone=field.Char()
-    date_naiss=field.Date("Date de naissance")
-    date_debut=field.DateTime("date debut")
+    prenom=fields.Char("prenom")
+    nom=fields.Char("nom")
+    adresse=fields.Char("adresse")
+    sexe=fields.Selection([("masculin","Masculin"),("feminin","Feminin")])
+    email=fields.Char()
+    telephone=fields.Char()
+    date_naiss=fields.Date("Date de naissance")
+    date_debut=fields.DateTime("date debut")
 

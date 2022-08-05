@@ -27,7 +27,7 @@
         # 'security/ir.model.access.csv',
         'views/apprenant_views.xml',
         'views/professeur_views.xml',
-        'views/matiere_views.xml',
+        'views/matiere.xml',
         
     ],
     # only loaded in demonstration mode

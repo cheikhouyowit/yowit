@@ -7,7 +7,7 @@
       <field name="model">classe.yowit</field>
       <field name="arch" type="xml">
         <tree>
-          <field name="nom"/>
+          <field name="nom_classe"/>
           <field name="code"/> 
         </tree>
       </field>
@@ -21,7 +21,7 @@
       <field name="arch" type="xml">
         <form>
             <group>
-              <field name="nom"/>
+              <field name="nom_classe"/>
               <field name="code"/>  
             </group>
         </form>

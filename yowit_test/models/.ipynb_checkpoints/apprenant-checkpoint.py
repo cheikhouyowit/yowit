@@ -13,5 +13,5 @@ class Apprenants(models.Model):
     date_debut=fields.Datetime("date debut")
     departement_id=fields.Many2one('departement.yowit')
     classe_id=fields.Many2one('classe.yowit')
-    _rec_name= 'apprenant_id'
+    _parent_name= 'apprenant_id'
 

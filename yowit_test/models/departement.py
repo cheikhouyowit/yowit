@@ -8,3 +8,4 @@ class Departement(models.Model):
     professeur_id=fields.One2many('professeur.yowit', inverse_name='departement_id')
     matiere_id=fields.One2many('matiere.yowit', inverse_name='departement_id')
     
+    

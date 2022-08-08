@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "yowit_test",
+    'name': "SOUNIOU SCHOOL",
 
     'summary': """
         Short (1 phrase/line) summary of the module's purpose, used as
@@ -26,6 +26,10 @@
     'data': [
         # 'security/ir.model.access.csv',
         'views/apprenant_views.xml',
+        'views/professeur_views.xml',
+        'views/matiere.xml',
+        'views/classe_views.xml',
+        'views/departement_views.xml',
         
     ],
     # only loaded in demonstration mode

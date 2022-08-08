@@ -28,6 +28,8 @@
         'views/apprenant_views.xml',
         'views/professeur_views.xml',
         'views/matiere.xml',
+        'views/classe_views.xml',
+        'views/departement_views.xml',
         
     ],
     # only loaded in demonstration mode

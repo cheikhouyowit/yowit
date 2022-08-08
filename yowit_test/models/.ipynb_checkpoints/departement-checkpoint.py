@@ -7,4 +7,6 @@ class Departement(models.Model):
     code=fields.Char()
     professeur_id=fields.One2many('professeur.yowit', inverse_name='departement_id')
     matiere_id=fields.One2many('matiere.yowit', inverse_name='departement_id')
+    _rec_name='departement_id'
+    
     

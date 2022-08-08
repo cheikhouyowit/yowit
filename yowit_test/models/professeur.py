@@ -1,4 +1,4 @@
-from odoo import models,fields,api
+   from odoo import models,fields,api
 
 
 class Professeur(models.Model):
@@ -13,4 +13,5 @@ class Professeur(models.Model):
     departement_id=fields.Many2one('departement.yowit')
     matiere_id=fields.Many2one('matiere.yowit')
     classe_id=fields.Many2many('classe.yowit', relation='prof_class', column1="prenom", column2="nom"  )
+    _rec_name= 'professeur_id'
     

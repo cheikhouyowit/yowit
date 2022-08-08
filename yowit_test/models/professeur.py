@@ -10,4 +10,7 @@ class Professeur(models.Model):
     email=fields.Char()
     telephone=fields.Char()
     date_debut=fields.Datetime("date debut")
+    departement_id=fields.Many2one(comodel_name='departement.yowit')
+    matiere_id=fields.Many2one(comodel_name='matiere.yowit')
+    classe_id=fields.Many2many(comodel_name='classe.yowit', relation='prof_class', column1="prenom", column2="nom"  )
     

@@ -11,4 +11,6 @@ class Apprenants(models.Model):
     telephone=fields.Char()
     date_naiss=fields.Date("Date de naissance")
     date_debut=fields.Datetime("date debut")
+    departement_id=fields.Many2one(comodel_name='departement.yowit')
+    classe_id=fields.Many2one(comodel_name='classe.yowit')
 

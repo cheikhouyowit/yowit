@@ -13,7 +13,9 @@
           <field name="sexe"/>
           <field name="email"/>
           <field name="telephone"/>
-          <field name="date_debut"/>  
+          <field name="date_debut"/> 
+          <field name="matiere_id"/>
+          <field name="departement_id"/>   
         </tree>
       </field>
     </record>

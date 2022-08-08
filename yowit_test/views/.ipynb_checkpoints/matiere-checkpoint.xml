@@ -9,6 +9,8 @@
         <tree>
           <field name="nom"/>
           <field name="code"/> 
+          <field name="departement_id"/> 
+            
         </tree>
       </field>
     </record>

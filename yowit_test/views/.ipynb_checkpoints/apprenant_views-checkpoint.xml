@@ -37,7 +37,9 @@
               <field name="email"/>
               <field name="telephone"/>
               <field name="date_naiss"/>
-              <field name="date_debut"/>  
+              <field name="date_debut"/> 
+              <field name="classe_id"/>
+              <field name="departement_id"/>
             </group>
         </form>
       </field>

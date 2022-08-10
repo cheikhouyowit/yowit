@@ -7,5 +7,5 @@ class Matiere(models.Model):
     code=fields.Char()
     departement_id=fields.Many2one('departement.yowit')
     professeur_id=fields.Many2many('professeur.yowit', relation='mat_prof', column1="nom", column2="prenom"  )
-    _parent_name='matiere_id'
+    _rec_name='nom'
     

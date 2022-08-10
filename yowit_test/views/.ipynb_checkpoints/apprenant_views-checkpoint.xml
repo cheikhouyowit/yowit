@@ -51,7 +51,7 @@
     <record model="ir.actions.act_window" id="apprenant_action_window">
       <field name="name">Domaine des apprenants</field>
       <field name="res_model">apprenant.yowit</field>
-      <field name="view_mode">tree,form</field>
+      <field name="view_mode">tree,form,kanban</field>
     </record>
 
 
@@ -84,6 +84,7 @@
 
     <menuitem name="Liste des Apprenants" id="yowit_test_apprenant_list" parent="yowit_test_apprenant_cat"
               action="apprenant_action_window"/>
+
 <!--     <menuitem name="Server to list" id="yowit_test" parent="yowit_test.menu_2"
               action="yowit_test.action_server"/> -->
 

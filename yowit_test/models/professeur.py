@@ -15,4 +15,13 @@ class Professeur(models.Model):
     classe_id=fields.Many2many('classe.yowit', relation='prof_class', column1="prenom", column2="nom"  )
     _rec_name='prenom'
     
+    @api.multi
+    def name_get(self):
+        dark= []
+        for app in self:
+            name= '(' + pro.classe_id.nom_classe + ')' + pro.prenom + ' ' + pro.nom 
+            dark.append((pro.id,name))
+            
+        return dark
+    
     

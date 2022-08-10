@@ -14,5 +14,12 @@ class Apprenants(models.Model):
     departement_id=fields.Many2one('departement.yowit')
     classe_id=fields.Many2one('classe.yowit')
     _rec_name='prenom'
-   
-
+    
+    @api.multi
+    def name_get(self):
+        dark= []
+        for app in self:
+            name= '(' + app.classe_id.nom_classe + ')' + app.prenom + ' ' + app.nom 
+            dark.append((app.id,name))
+            
+        return dark

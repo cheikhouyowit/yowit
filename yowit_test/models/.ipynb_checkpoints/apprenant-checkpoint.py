@@ -15,7 +15,7 @@ class Apprenants(models.Model):
     classe_id=fields.Many2one('classe.yowit')
     _rec_name='prenom'
     
-    @api.multi
+    @api.multidef
     def name_get(self):
         dark= []
         for app in self:

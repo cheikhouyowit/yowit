@@ -19,7 +19,7 @@ class Apprenants(models.Model):
     def name_get(self):
         dark= []
         for app in self:
-            name= '(' + app.classe_id.nom_classe + ')' + app.prenom + ' ' + app.nom 
+            name= app.prenom + ' ' + app.nom + '(' + app.departement_id.nom / app.classe_id.nom_classe + ')' + 
             dark.append((app.id,name))
             
         return dark

@@ -19,7 +19,7 @@ class Professeur(models.Model):
     def name_get(self):
         dark= []
         for pro in self:
-            name= pro.prenom + ' ' + pro.nom + '(' + pro.departement_id.nom + '/' + pro.classe_id.nom_classe + ')'
+            name= pro.prenom + ' ' + pro.nom + '(' + pro.departement_id.nom + '//' + pro.classe_id.nom_classe + ')'
             dark.append((pro.id,name))
             
         return dark

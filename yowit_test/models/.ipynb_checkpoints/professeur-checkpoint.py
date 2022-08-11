@@ -15,7 +15,7 @@ class Professeur(models.Model):
     classe_id=fields.Many2many('classe.yowit', relation='prof_class', column1="prenom", column2="nom"  )
     _rec_name='prenom'
     
-    @api.multidef
+
     def name_get(self):
         dark= []
         for app in self:

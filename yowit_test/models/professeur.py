@@ -18,7 +18,7 @@ class Professeur(models.Model):
 
     def name_get(self):
         dark= []
-        for app in self:
+        for pro in self:
             name= pro.prenom + ' ' + pro.nom + '(' + pro.departement_id.nom + '/' + pro.classe_id.nom_classe + ')'
             dark.append((pro.id,name))
             
